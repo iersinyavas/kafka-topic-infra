@@ -85,7 +85,7 @@ pipeline {
                        cp $ENV_FILE infra/.env
        
                        cd infra
-                       docker-compose pull order-service
+                       docker-compose pull kafka-topic-infra
                        docker-compose -p econverse-infra up -d --no-deps --force-recreate kafka-topic-infra
                    '''
                 }

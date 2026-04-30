@@ -17,7 +17,7 @@ pipeline {
         stage('Build Maven') {
             steps {
                 checkout scmGit(
-                        branches: [[name: '*/development']],
+                        branches: [[name: '*/master']],
                         extensions: [],
                         userRemoteConfigs: [[
                                                     url          : 'https://github.com/iersinyavas/kafka-topic-infra',

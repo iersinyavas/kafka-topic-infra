@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: kafka-topic-infra
+  main:
+    web-application-type: none
 
   kafka:
     bootstrap-servers: localhost:9092   # docker-compose içindeki kafka service adı

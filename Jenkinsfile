@@ -86,7 +86,7 @@ pipeline {
        
                        cd infra
                        docker-compose pull kafka-topic-infra
-                       docker-compose -p econverse-infra up -d --no-deps --force-recreate kafka-topic-infra
+                       docker-compose -p econverse-infra run --rm kafka-topic-infra
                    '''
                 }
             }
